@@ -10,7 +10,7 @@ end
 
 
 def consolidate_cart(cart)
-  new_array = cart.reduce do |hash|
+  new_array = cart.map do |hash|
     find_item_by_name_in_collection(hash[:item],new_array) ? hash[:count] += 1 : hash[:count] = 1
     binding.pry
   end 
