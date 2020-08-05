@@ -5,7 +5,7 @@ end
 
 
 def consolidate_cart(cart)
-cart.reduce({}) {|key,value| 
+cart.reduce({}) {|key,value| find_item_by_name_in_collection(key[:item]) ? cart[key]
 
 end
 
