@@ -3,7 +3,6 @@ def find_item_by_name_in_collection(item, cart)
   new_hash[0]
 end
 
-end
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
