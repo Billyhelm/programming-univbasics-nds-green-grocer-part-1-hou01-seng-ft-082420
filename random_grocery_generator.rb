@@ -31,12 +31,10 @@ def find_item_by_name_in_collection(item, cart)
   cart.each do |hash|
     binding.pry
     if hash[:item] == item 
-      p hash
+      return hash
     end 
   end 
 end
-
-find_item_by_name_in_collection("WINE", test_cart)
 
 def generate_cart
 	[].tap do |cart|
