@@ -22,6 +22,14 @@ def coupons
 	]
 end
 
+def find_item_by_name_in_collection(item, cart)
+  cart.each do |hash|
+    if hash[:item] == item 
+      return hash
+    end 
+  end 
+end
+
 def generate_cart
 	[].tap do |cart|
 		rand(20).times do
