@@ -1,4 +1,4 @@
-require_relative 'grocer'
+#require_relative 'grocer'
 require 'pry'
 
 def items
@@ -24,10 +24,14 @@ def coupons
 end
 
 def find_item_by_name_in_collection(item, cart)
-  cart.find{|hash| hash[:item] == item}
+  cart.each do |hash|
+    if hash[:item] == item 
+      return hash
     end 
   end 
 end
+
+find_item_by_name_in_collection("WINE", test_cart)
 
 def generate_cart
 	[].tap do |cart|
