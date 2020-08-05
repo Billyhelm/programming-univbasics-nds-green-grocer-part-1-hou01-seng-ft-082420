@@ -14,5 +14,10 @@ def consolidate_cart(cart)
   new_array
 end
 
-
+cart = [
+  {:item => "AVOCADO", :price => 3.00, :clearance => true },
+  {:item => "AVOCADO", :price => 3.00, :clearance => true },
+  {:item => "KALE", :price => 3.00, :clearance => false}
+]
   
+consolidate_cart(cart)
