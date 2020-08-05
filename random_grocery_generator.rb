@@ -25,7 +25,7 @@ end
 
 def find_item_by_name_in_collection(item, cart)
   new_hash = cart.select {|hash| hash[:item] == item}
-  new_hash[0]
+  return new_hash[0]
   
 end
 test_cart = [
