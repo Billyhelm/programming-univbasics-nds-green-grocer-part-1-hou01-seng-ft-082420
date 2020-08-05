@@ -24,12 +24,8 @@ def coupons
 end
 
 def find_item_by_name_in_collection(item, cart)
-  cart.each do |hash|
-    if hash[:item] == item 
-      return hash
-    end 
+  cart.select {
     binding.pry
-  end 
 end
 test_cart = [
         { :item => "DOG FOOD" },
