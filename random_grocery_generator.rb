@@ -25,7 +25,8 @@ end
 
 def find_item_by_name_in_collection(item, cart)
   new_hash = cart.select {|hash| hash[:item] == item}
-  new_hash[0]
+  new_hash = {:item => "WINE"}
+  new_hash
 end
 
 def generate_cart
