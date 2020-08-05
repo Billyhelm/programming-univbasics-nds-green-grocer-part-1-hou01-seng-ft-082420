@@ -29,7 +29,6 @@ def find_item_by_name_in_collection(item, cart)
       return hash
     end 
   end 
-  binding.pry
 end
 
 def generate_cart
