@@ -24,9 +24,7 @@ def coupons
 end
 
 def find_item_by_name_in_collection(item, cart)
-  cart.find do |hash|
-    if hash[:item] == item 
-      return hash
+  cart.find{|hash| 
     end 
   end 
 end
