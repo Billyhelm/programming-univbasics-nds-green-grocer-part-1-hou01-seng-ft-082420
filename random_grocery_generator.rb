@@ -22,7 +22,11 @@ def coupons
 		{:item => "CHEESE", :num => 3, :cost => 15.00}
 	]
 end
-
+test_cart =  [
+        { :item => "DOG FOOD" },
+        { :item => "WINE" },
+        { :item => "STRYCHNINE" }
+      ]
 def find_item_by_name_in_collection(item, cart)
   cart.each do |hash|
     binding.pry
@@ -31,6 +35,8 @@ def find_item_by_name_in_collection(item, cart)
     end 
   end 
 end
+
+find_item_by_name_in_collection("WINE", test_cart)
 
 def generate_cart
 	[].tap do |cart|
