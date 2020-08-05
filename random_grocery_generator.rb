@@ -26,7 +26,7 @@ end
 def find_item_by_name_in_collection(item, cart)
   cart.each do |hash|
     binding.pry
-    if hash[:item] == item 
+    if hash[:item] === item 
       return hash
     end 
   end 
