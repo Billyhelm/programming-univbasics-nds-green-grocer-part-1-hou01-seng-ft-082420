@@ -19,6 +19,7 @@ def consolidate_cart(cart)
       hash[:count] = 1
     new_array.push(hash)
     binding.pry
+    end 
   end 
   p new_array
 end
