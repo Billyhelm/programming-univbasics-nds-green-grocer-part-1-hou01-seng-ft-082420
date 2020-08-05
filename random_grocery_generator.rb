@@ -28,8 +28,14 @@ def find_item_by_name_in_collection(item, cart)
     if hash[:item] == item 
       return hash
     end 
+    binding.pry
   end 
 end
+test_cart = [
+        { :item => "DOG FOOD" },
+        { :item => "WINE" },
+        { :item => "STRYCHNINE" }
+      ]
 
 find_item_by_name_in_collection("WINE", test_cart)
 
