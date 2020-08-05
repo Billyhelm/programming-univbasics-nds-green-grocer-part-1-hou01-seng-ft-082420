@@ -6,7 +6,9 @@ end
 
 def consolidate_cart(cart)
   new_hash = []
-  cart.each{|key| (find_item_by_name_in_collection(key[:item],new_hash) ? cart[key][:count] += 1 : cart[key][:count] = 1) & new_hash.push(cart[key])}
+  cart.each do |key|
+    find_item_by_name_in_collection(key[:item],new_hash) 
+  end 
   new_hash
 end
 
